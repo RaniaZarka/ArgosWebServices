@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CompulsoryAssignment</name>
+    </assembly>
+    <members>
+        <member name="T:CompulsoryAssignment.Book">
+            <summary>
+            public class Book
+            </summary>
+        </member>
+        <member name="F:CompulsoryAssignment.Book.author">
+            <summary>
+            instance fields 
+            </summary>
+        </member>
+        <member name="M:CompulsoryAssignment.Book.#ctor">
+            <summary>
+            default constructor public 
+            </summary>
+        </member>
+        <member name="M:CompulsoryAssignment.Book.#ctor(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            public constrauctor with 4 parameters 
+            </summary>
+            <param name="Isbn13"></param>
+            <param name="Author"></param>
+            <param name="Title"></param>
+            <param name="PageNumber"></param>
+        </member>
+        <member name="P:CompulsoryAssignment.Book.Isbn13">
+            <summary>
+            public property that get and set the value of the Isbn13 property that should have 13 characters
+            </summary>
+        </member>
+        <member name="P:CompulsoryAssignment.Book.Title">
+            <summary>
+            public property that get and set the value of Title that shoudl be more than 2 characters
+            </summary>
+        </member>
+        <member name="P:CompulsoryAssignment.Book.Author">
+            <summary>
+            public property that get and set the value of the Author 
+            </summary>
+        </member>
+        <member name="P:CompulsoryAssignment.Book.PageNumber">
+            <summary>
+            public property that get and set the value of the PageNumber that should be between 11 and 1000 
+            </summary>
+        </member>
+    </members>
+</doc>

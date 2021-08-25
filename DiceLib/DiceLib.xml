@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DiceLib</name>
+    </assembly>
+    <members>
+        <member name="T:DiceLib.DiceRoll">
+            <summary>
+             public class DiceROll
+            </summary>
+        </member>
+        <member name="F:DiceLib.DiceRoll.rnd">
+            <summary>
+             private instance fields 
+            </summary>
+        </member>
+        <member name="P:DiceLib.DiceRoll.ID">
+            <summary>
+            public int property ID
+            </summary>
+        </member>
+        <member name="P:DiceLib.DiceRoll.NumberOfDice">
+            <summary>
+            public int  property that can be 1 or 2 
+            </summary>
+        </member>
+        <member name="P:DiceLib.DiceRoll.Guess">
+            <summary>
+             public int property if NumberOfDice is 1, then its value is between 1 and 7, otherwise value is between 2 and 12 
+             
+            </summary>
+        </member>
+        <member name="P:DiceLib.DiceRoll.Result">
+            <summary>
+             public property  if NumberOfDice is 1, then its value is between 1 and 7, otherwise value is between 2 and 12 
+            </summary>
+        </member>
+        <member name="P:DiceLib.DiceRoll.Rnd">
+            <summary>
+             public random property 
+            </summary>
+        </member>
+        <member name="M:DiceLib.DiceRoll.GuessResult(System.Int32,System.Int32)">
+            <summary>
+             public int method that retun the guess of the user 
+            </summary>
+            <param name="guess"></param>
+            <param name="number"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

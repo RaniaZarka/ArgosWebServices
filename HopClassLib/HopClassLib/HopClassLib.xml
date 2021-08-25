@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HopClassLib</name>
+    </assembly>
+    <members>
+        <member name="T:HopClassLib.Hop">
+            <summary>
+             Public class Hop 
+            </summary>
+        </member>
+        <member name="M:HopClassLib.Hop.#ctor(System.Int32,System.String,System.Double,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Parameterised constructor
+            </summary>
+            <param name="id"></param>
+            <param name="name"></param>
+            <param name="alphaAcide"></param>
+            <param name="harvestYear"></param>
+            <param name="price"></param>
+        </member>
+        <member name="P:HopClassLib.Hop.ID">
+            <summary>
+             public int ID property
+            </summary>
+        </member>
+        <member name="P:HopClassLib.Hop.Name">
+            <summary>
+            Public string Name property
+            </summary>
+        </member>
+        <member name="P:HopClassLib.Hop.AlphaAcid">
+            <summary>
+             public double AlphaAcide property
+            </summary>
+        </member>
+        <member name="P:HopClassLib.Hop.Stock">
+            <summary>
+            public property int stock 
+            </summary>
+        </member>
+        <member name="P:HopClassLib.Hop.Harvestyear">
+            <summary>
+            public int HarvestYear property
+            </summary>
+        </member>
+        <member name="P:HopClassLib.Hop.Price">
+            <summary>
+             public int price property 
+            </summary>
+        </member>
+        <member name="M:HopClassLib.Hop.ToString">
+            <summary>
+             public override string ToSting method that returns the properties into a string 
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

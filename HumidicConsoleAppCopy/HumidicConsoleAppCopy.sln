@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumidicConsoleAppCopy", "HumidicConsoleAppCopy.csproj", "{6EE3F1EB-342C-48BD-8C36-3B909A1AB16D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "..\UnitTestProject1\UnitTestProject1.csproj", "{08932945-365B-4340-BDED-992C065337AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EE3F1EB-342C-48BD-8C36-3B909A1AB16D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EE3F1EB-342C-48BD-8C36-3B909A1AB16D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EE3F1EB-342C-48BD-8C36-3B909A1AB16D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EE3F1EB-342C-48BD-8C36-3B909A1AB16D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08932945-365B-4340-BDED-992C065337AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08932945-365B-4340-BDED-992C065337AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08932945-365B-4340-BDED-992C065337AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08932945-365B-4340-BDED-992C065337AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28F0198A-14A9-489D-B326-79353CE60B6B}
+	EndGlobalSection
+EndGlobal

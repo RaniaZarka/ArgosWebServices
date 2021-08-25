@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator</name>
+    </assembly>
+    <members>
+        <member name="T:Calculator.Calculation">
+            <summary>
+            Calculation class
+            </summary>
+        </member>
+        <member name="M:Calculator.Calculation.#ctor">
+            <summary>
+            Default constructor of the class 
+            </summary>
+        </member>
+        <member name="M:Calculator.Calculation.SumMethod(System.Int32,System.Int32)">
+            <summary>
+            Add method 
+            </summary>
+            <param name="Num1"> int Num1</param>
+            <param name="Num2"> int Num2</param>
+            <returns> return the sum of the 2 numbers </returns>
+        </member>
+        <member name="M:Calculator.Calculation.SubstractMethod(System.Int32,System.Int32)">
+            <summary>
+            Substruction Method
+            </summary>
+            <param name="Num1"> int Num1</param>
+            <param name="Num2"> Int Num2 </param>
+            <returns> returns the substration of Num2 from Num1 </returns>
+        </member>
+        <member name="M:Calculator.Calculation.MultiplyMethod(System.Int32,System.Int32)">
+            <summary>
+            Multiply method 
+            </summary>
+            <param name="Num1"> int Num1 </param>
+            <param name="Num2"> Int Num2 </param>
+            <returns> return the multiplication of the 2 numbers </returns>
+        </member>
+        <member name="M:Calculator.Calculation.DivideMethod(System.Int32,System.Int32)">
+            <summary>
+            Divide method 
+            </summary>
+            <param name="Num1"> int Num1</param>
+            <param name="Num2">int Num2</param>
+            <returns> return the division of Num1 by Num2 </returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SInvestLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:SInvestLibrary.Trade">
+            <summary>
+            public class Trade
+            </summary>
+        </member>
+        <member name="F:SInvestLibrary.Trade.tradeType">
+            <summary>
+            instance field
+            </summary>
+        </member>
+        <member name="M:SInvestLibrary.Trade.#ctor">
+            <summary>
+            Empty constructor
+            </summary>
+        </member>
+        <member name="M:SInvestLibrary.Trade.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Double)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="id"></param>
+            <param name="customerId"></param>
+            <param name="shareName"></param>
+            <param name="sharePrice"></param>
+            <param name="numberOfShares"></param>
+            <param name="tradeType"></param>
+            <param name="price"></param>
+        </member>
+        <member name="P:SInvestLibrary.Trade.ID">
+            <summary>
+            public properties
+            </summary>
+        </member>
+        <member name="P:SInvestLibrary.Trade.TradeType">
+            <summary>
+            public string Property that accept only Buy or Sell 
+            </summary>
+        </member>
+        <member name="P:SInvestLibrary.Trade.Price">
+            <summary>
+            Price public double  property
+            </summary>
+        </member>
+        <member name="M:SInvestLibrary.Trade.CalculatePrice(System.String,System.Int32,System.Int32)">
+            <summary>
+            Public static method that calculate the price 
+            </summary>
+            <param name="TradeType"></param>
+            <param name="Price"></param>
+            <param name="NumberOfShares"></param>
+            <param name="SharePrice"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

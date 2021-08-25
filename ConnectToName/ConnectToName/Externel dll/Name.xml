@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LibraryName</name>
+    </assembly>
+    <members>
+        <member name="T:LibraryName.Name">
+             <summary>
+            Name class 
+             </summary>
+        </member>
+        <member name="F:LibraryName.Name.myName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:LibraryName.Name.#ctor(System.String)">
+            <summary>
+            this constructor takes a string parameter
+            </summary>
+            <param name="name">call with your name</param>
+        </member>
+        <member name="M:LibraryName.Name.MyNameIs">
+            <summary>
+            this method will return my name 
+            </summary>
+            <returns> My name is: + myName</returns>
+        </member>
+    </members>
+</doc>

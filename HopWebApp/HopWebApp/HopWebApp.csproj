@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="ExternalDLL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="HopClassLib">
+      <HintPath>..\..\HopClassLib\HopClassLib\bin\Debug\netcoreapp3.1\HopClassLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+
+</Project>

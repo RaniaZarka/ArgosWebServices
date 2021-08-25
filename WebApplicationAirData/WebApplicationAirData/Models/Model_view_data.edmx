@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Environmental_Data_2020Model1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'Environmental_Data_2020.dbo.View_Data' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="View_Data">
+          <Key>
+            <PropertyRef Name="AktivitetId" />
+          </Key>
+          <Property Name="time_stamp" Type="datetime" />
+          <Property Name="Data_Type" Type="nvarchar" MaxLength="30" />
+          <Property Name="Enhed_Name" Type="nvarchar" MaxLength="30" />
+          <Property Name="Stof_Name" Type="nvarchar" MaxLength="30" />
+          <Property Name="MeasurePlace_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Measurement_Result" Type="float" />
+          <Property Name="Constuction_Code" Type="nvarchar" MaxLength="50" />
+          <Property Name="AktivitetId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Environmental_Data_2020Model1StoreContainer">
+          <EntitySet Name="View_Data" EntityType="Self.View_Data" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [View_Data].[time_stamp] AS [time_stamp], 
+    [View_Data].[Data_Type] AS [Data_Type], 
+    [View_Data].[Enhed_Name] AS [Enhed_Name], 
+    [View_Data].[Stof_Name] AS [Stof_Name], 
+    [View_Data].[MeasurePlace_Name] AS [MeasurePlace_Name], 
+    [View_Data].[Measurement_Result] AS [Measurement_Result], 
+    [View_Data].[Constuction_Code] AS [Constuction_Code], 
+    [View_Data].[AktivitetId] AS [AktivitetId]
+    FROM [dbo].[View_Data] AS [View_Data]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Environmental_Data_2020Model1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="View_Data">
+          <Key>
+            <PropertyRef Name="AktivitetId" />
+          </Key>
+          <Property Name="time_stamp" Type="DateTime" Precision="3" />
+          <Property Name="Data_Type" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Enhed_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Stof_Name" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="MeasurePlace_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Measurement_Result" Type="Double" />
+          <Property Name="Constuction_Code" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AktivitetId" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="Environmental_Data_2020Entities4" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="View_Data" EntityType="Self.View_Data" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Environmental_Data_2020Model1StoreContainer" CdmEntityContainer="Environmental_Data_2020Entities4">
+          <EntitySetMapping Name="View_Data">
+            <EntityTypeMapping TypeName="Environmental_Data_2020Model1.View_Data">
+              <MappingFragment StoreEntitySet="View_Data">
+                <ScalarProperty Name="time_stamp" ColumnName="time_stamp" />
+                <ScalarProperty Name="Data_Type" ColumnName="Data_Type" />
+                <ScalarProperty Name="Enhed_Name" ColumnName="Enhed_Name" />
+                <ScalarProperty Name="Stof_Name" ColumnName="Stof_Name" />
+                <ScalarProperty Name="MeasurePlace_Name" ColumnName="MeasurePlace_Name" />
+                <ScalarProperty Name="Measurement_Result" ColumnName="Measurement_Result" />
+                <ScalarProperty Name="Constuction_Code" ColumnName="Constuction_Code" />
+                <ScalarProperty Name="AktivitetId" ColumnName="AktivitetId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
